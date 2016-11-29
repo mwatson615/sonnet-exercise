@@ -24,3 +24,18 @@ And, thou away, the very birds are mute:
    Or, if they sing, 'tis with so dull a cheer,
    That leaves look pale, dreading the winter's near.
 </div>
+
+
+var theSonnet = document.getElementById("sonnet").innerHTML;
+console.log(theSonnet);
+
+console.log("orphans", theSonnet.indexOf("orphans"))
+
+var numOfCharacters = theSonnet.length
+console.log("numOfCharacters", numOfCharacters)
+
+var newSonnet = theSonnet.replace("winter", "yuletide")
+console.log(newSonnet)
+
+newSonnet = theSonnet.split(" the ").join(" a large ")
+console.log(newSonnet)
